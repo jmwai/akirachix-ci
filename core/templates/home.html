@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Welcome Home
+        </title>
+    </head>
+    <body>
+        <h1>Welcome to my app</h1>
+        {% if user.is_authenticated %}
+        Welcome to akirachix.
+        see the api <a href="/api/"> api </a>
+        {% else %}
+        <a href="/accounts/login/"> You must login first</a> or 
+        <a href="/accounts/register/"> Register</a>
+        {% endif %}
+    </body>
+</html>
